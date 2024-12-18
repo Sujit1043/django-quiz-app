@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Results</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+  <style>
+    .btn2 {
+      border-radius: 4px;
+      background-color: rgb(106, 106, 226);
+      color: solid white;
+      width: 103px;
+      height: 30px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      animation-name: pulse;
+      animation-duration: 4s;
+      cursor: pointer;
+    }
+
+    .link1 {
+      text-decoration: none;
+      color: white;
+    }
+
+    h1 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    p {
+      font-family: 'Times New Roman', Times, serif
+    }
+
+    .p1 {
+      color: black;
+    }
+
+    .p2 {
+      color: green;
+    }
+
+    .p3 {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Quiz Results</h1>
+  <p class="p1">Total Attempted: {{ total_attempted }}</p>
+  <p class="p2">Correct Answers: {{ correct_count }}</p>
+  <p class="p3">Incorrect Answers: {{ incorrect_count }}</p>
+  <button class="btn2">
+    <a href="{% url 'start_quiz' %}" class="link1">Restart Quiz</a>
+  </button>
+</body>
+
+</html>

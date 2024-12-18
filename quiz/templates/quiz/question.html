@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Question</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+  <style>
+    .btn {
+      background-color: green;
+      color: white;
+      margin-top: 15px;
+      margin-left: 6px;
+      height: 37px;
+      border-radius: 5px;
+      animation-name: pulse;
+      animation-duration: 2s;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    p {
+      font-family: 'Times New Roman', Times, serif
+    }
+  </style>
+</head>
+
+<body>
+  <h1>{{ question.question_text }}</h1>
+  <form action="{% url 'submit_answer' question.id %}" method="post">
+    {% csrf_token %}
+    <label>
+      <input type="radio" name="option" value="a" required /> {{ question.option_a }}
+    </label><br />
+    <label>
+      <input type="radio" name="option" value="b" required /> {{ question.option_b }}
+    </label><br />
+    <label>
+      <input type="radio" name="option" value="c" required /> {{ question.option_c }}
+    </label><br />
+    <label>
+      <input type="radio" name="option" value="d" required /> {{ question.option_d }}
+    </label><br />
+    <button type="submit" class="btn">Submit Answer</button>
+  </form>
+</body>
+
+</html>
