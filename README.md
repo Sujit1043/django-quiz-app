@@ -37,3 +37,8 @@
 # Testing the App
 1. Visit the app and answer up to 5 questions.
 2. After completing, review the results displayed on the results page.
+
+
+![image](https://github.com/user-attachments/assets/9a50736b-2d3c-41de-90db-b0f3bab5f958)
+
+
