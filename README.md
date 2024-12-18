@@ -38,7 +38,14 @@
 1. Visit the app and answer up to 5 questions.
 2. After completing, review the results displayed on the results page.
 
+Home page : 
+![image](https://github.com/user-attachments/assets/b20aada8-a315-4cb9-957d-a2b60117ad0c)
 
-![image](https://github.com/user-attachments/assets/9a50736b-2d3c-41de-90db-b0f3bab5f958)
+Quiz page : 
+![image](https://github.com/user-attachments/assets/7ba63e25-5a98-41d4-b3bb-a16e10029e17)
+
+After submittion the quiz result page : 
+![image](https://github.com/user-attachments/assets/bef81a96-438a-4438-81a6-cc85e0dcbb18)
+
 
 
